@@ -41,29 +41,30 @@
     }
 
     //Validate username
-    if(is_blank($username) || !has_length($first_name, ['min' => 8, 'max' => 255])) {
+    if(is_blank($username) || !has_length($username, ['min' => 8, 'max' => 255])) {
       $errors[] = 'Username must be at least 8 characters.';
     }
     
     // if there were no errors, submit data to database
     if(count($errors) == 0) {
       // Write SQL INSERT statement
-      // $sql = "";
+      $sql = "INSERT INTO user (first_name, last_name, email, username, created_at) VALUES ('" . $first_name . "', '" . $last_name . "', '" . $email . "', '" . $username . "', '" . date("Y-m-d H:i:s") . "')" ;
 
       // For INSERT statments, $result is just true/false
-      // $result = db_query($db, $sql);
-      // if($result) {
-      //   db_close($db);
+      $result = db_query($db, $sql);
+      if($result) {
+        db_close($db);
 
       //   TODO redirect user to success page
 
-      // } else {
+      }
+      else {
       //   // The SQL INSERT statement failed.
       //   // Just show the error, not the form
-      //   echo db_error($db);
-      //   db_close($db);
-      //   exit;
-      // }
+        echo db_error($db);
+        db_close($db);
+        exit;
+      }
     }
   }
 

@@ -33,11 +33,11 @@ The following **required** functionality is completed:
   * [x]  Required: Report all errors as a list above the form.
   * [x]  Required: Test each field to ensure you get the expected errors.
 
-6. [ ]  Required: Submit successfully-validated form values to the database.
-  * [ ]  Required: Write an SQL insert statement.
-  * [ ]  Required: Add current date and time to "created\_at".
-  * [ ]  Required: Follow best practices regarding the query result and database connection.
-  * [ ]  Required: Use the command line to check the records.
+6. [x]  Required: Submit successfully-validated form values to the database.
+  * [x]  Required: Write an SQL insert statement.
+  * [x]  Required: Add current date and time to "created\_at".
+  * [x]  Required: Follow best practices regarding the query result and database connection.
+  * [x]  Required: Use the command line to check the records.
 
 7. [ ]  Required: Redirect the user to a confirmation page.
     * [ ]  Required: Locate the page "public/registration\_success.php".

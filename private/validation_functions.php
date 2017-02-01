@@ -24,7 +24,7 @@
 
   // has_valid_email_format('test@test.com')
   function has_valid_email_format($value) {
-    $position = strpos('@', $value);
+    $position = strpos($value, '@');
     if($position !== false) {
       if(($position > 0) && ($position < (strlen($value)-1))) {
         return true;
