@@ -1,6 +1,6 @@
 # Project 1 - Globitek CMS
 
-Time spent: **X** hours spent in total
+Time spent: **6** hours spent in total
 
 ## User Stories
 
@@ -39,11 +39,11 @@ The following **required** functionality is completed:
   * [x]  Required: Follow best practices regarding the query result and database connection.
   * [x]  Required: Use the command line to check the records.
 
-7. [ ]  Required: Redirect the user to a confirmation page.
-    * [ ]  Required: Locate the page "public/registration\_success.php".
-    * [ ]  Required: Redirect the user to the new page. ([Tips](#!hints))
+7. [x]  Required: Redirect the user to a confirmation page.
+    * [x]  Required: Locate the page "public/registration\_success.php".
+    * [x]  Required: Redirect the user to the new page. ([Tips](#!hints))
 
-8. [ ]  Required: Sanitize all dynamic output for HTML. ([Tips](#!hints))
+8. [x]  Required: Sanitize all dynamic output for HTML. ([Tips](#!hints))
 
 
 The following advanced user stories are optional:

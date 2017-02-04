@@ -56,7 +56,7 @@
         db_close($db);
 
       //   TODO redirect user to success page
-
+        redirect_to('registration_success.php');
       }
       else {
       //   // The SQL INSERT statement failed.
@@ -89,10 +89,10 @@
   <html>
     <body>
       <form action="register.php" method="post">
-        <p>First Name: <br /><input type="text" name="first_name" value="<?php echo $first_name ?>"/></p> 
-        <p>Last Name: <br /><input type="text" name="last_name" value="<?php echo $last_name ?>"/></p>
-        <p>Email: <br /><input type="text" name="email" value="<?php echo $email ?>" /></p>
-        <p>Username: <br /><input type="text" name="username" value="<?php echo $username ?>" /></p>
+        <p>First Name: <br /><input type="text" name="first_name" value="<?php echo htmlspecialchars($first_name) ?>"/></p> 
+        <p>Last Name: <br /><input type="text" name="last_name" value="<?php echo htmlspecialchars($last_name) ?>"/></p>
+        <p>Email: <br /><input type="text" name="email" value="<?php echo htmlspecialchars($email) ?>" /></p>
+        <p>Username: <br /><input type="text" name="username" value="<?php echo htmlspecialchars($username) ?>" /></p>
         <br />
         <div class="submit">
           <input type="submit" name="submit" value="Submit" />
